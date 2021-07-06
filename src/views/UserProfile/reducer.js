@@ -12,7 +12,7 @@ user: [
 };
 
 function userProfileReducer(state = initialState, action) {
-    console.log(action,"action")
+   // console.log(action,"action")
     switch (action.type) {
         case actionTypes.GET_USER:
             return{...state, loading:true}

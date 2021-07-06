@@ -12,7 +12,7 @@ cards: [
 };
 
 function dashboardReducer(state = initialState, action) {
-    console.log(action,"action")
+   // console.log(action,"action")
     switch (action.type) {
         case actionTypes.GET_CARDS:
             return{...state, loading:true}

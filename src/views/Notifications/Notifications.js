@@ -37,7 +37,7 @@ const Notifications = ()=> {
     dispatch(getAllLimits()); 
   },[dispatch]);
   const limits = data.limits[0];
-  console.log(limits,"limits")
+ // console.log(limits,"limits")
 
   const [tempValue, setTempValue] = useState([20,30]);
   const [humValue, setHumValue] = useState([50, 80]);
@@ -82,9 +82,9 @@ const Notifications = ()=> {
     }
     dispatch(addNewLimits(water))  
   };
-  console.log(tempValue,"temp");
-  console.log(humValue,"hum");
-  console.log(waterValue,"water")
+  // console.log(tempValue,"temp");
+  // console.log(humValue,"hum");
+  // console.log(waterValue,"water")
   
   return (
     <div>

@@ -11,7 +11,7 @@ devices: [
 };
 
 function devicesListReducer(state = initialState, action) {
-    console.log(action,"action")
+//console.log(action,"action")
     switch (action.type) {
         case actionTypes.GET_DEVICES:
             return{...state, loading:true}

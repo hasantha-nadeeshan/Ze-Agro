@@ -51,13 +51,13 @@ export default function TableList() {
   useEffect(() => {
     dispatch(getAllDevices()); 
   },[dispatch]);
-  console.log(data,"data")
+  //console.log(data,"data")
   const devices = data.devices;
   const devicesList = data.devices[0];
   const tableData = devices.map((item,index)=>{
     return [index+1, item.deviceName, item.status, item.created.toDate().toDateString()]
   })
-  console.log(tableData)
+ // console.log(tableData)
   
   return (
     <div>

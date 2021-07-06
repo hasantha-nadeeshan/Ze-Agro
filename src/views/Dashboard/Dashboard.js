@@ -20,6 +20,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardIcon from "components/Card/CardIcon.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import Loader from "components/Loader/Loader.js";
 //Semantic Ui icons
 import { Icon } from "semantic-ui-react";
 
@@ -49,7 +50,11 @@ const Dashboard = ()=> {
   
   return (
     <div>
-      {data.loading && console.log("loading")}
+      {data.loading && 
+        <div>
+          <Loader/>
+        </div>
+      }
       {devicesData ?(!data.loading && 
         <div>
           <GridContainer>

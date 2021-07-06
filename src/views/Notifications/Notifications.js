@@ -20,6 +20,7 @@ import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardIcon from "components/Card/CardIcon.js";
 import CardFooter from "components/Card/CardFooter.js";
+import Loader from "components/Loader/Loader.js";
 //Semantic Ui icons
 import { Icon } from "semantic-ui-react";
 
@@ -88,7 +89,10 @@ const Notifications = ()=> {
   
   return (
     <div>
-      {data.loading && console.log("loading")}
+      {data.loading && <div>
+          <Loader/>
+        </div>
+      }
       {limits ?(!data.loading && 
         <div>
           <GridContainer>

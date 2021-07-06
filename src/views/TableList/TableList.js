@@ -10,6 +10,7 @@ import Table from "components/Table/Table.js";
 import Card from "components/Card/Card.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
+import Loader from "components/Loader/Loader.js";
 
 const styles = {
   cardCategoryWhite: {
@@ -61,7 +62,10 @@ export default function TableList() {
   
   return (
     <div>
-      {data.loading && console.log("loading")}
+      {data.loading && <div>
+          <Loader/>
+        </div>
+      }
       {devicesList ?(!data.loading && 
         <div>
           <GridContainer>

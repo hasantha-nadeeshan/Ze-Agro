@@ -16,6 +16,7 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import Loader from "components/Loader/Loader.js";
 
 import avatar from "assets/img/faces/marc.jpg";
 
@@ -90,7 +91,10 @@ export default function UserProfile() {
 
   return (
     <div>
-      {data.loading && console.log("loading")}
+      {data.loading && <div>
+          <Loader/>
+        </div>
+      }
       {userData ?(!data.loading && 
         <div>
           <GridContainer>

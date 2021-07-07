@@ -146,12 +146,12 @@ const Dashboard = ()=> {
                 </CardHeader>
                 <CardBody>
                   <h4 className={classes.cardTitle}>Soil Water Level</h4>
-                  <p className={classes.cardCategory}>
+                  {/* <p className={classes.cardCategory}>
                     <span className={classes.successText}>
                       <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                     </span>{" "}
                     increase in last 3 hours.
-                  </p>
+                  </p> */}
                 </CardBody>
                 <CardFooter chart>
                   <div className={classes.stats}>
@@ -177,12 +177,12 @@ const Dashboard = ()=> {
                 </CardHeader>
                 <CardBody>
                   <h4 className={classes.cardTitle}>Humidity</h4>
-                  <p className={classes.cardCategory}>
+                  {/* <p className={classes.cardCategory}>
                     <span className={classes.successText}>
                       <ArrowUpward className={classes.upArrowCardCategory} /> 50%
                     </span>{" "}
                     increase in last 3 hours.
-                  </p>
+                  </p> */}
                 </CardBody>
                 <CardFooter chart>
                   <div className={classes.stats}>
@@ -207,13 +207,13 @@ const Dashboard = ()=> {
                 </CardHeader>
                 <CardBody>
                   <h4 className={classes.cardTitle}>Temperature</h4>
-                  <p className={classes.cardCategory}>
+                  {/* <p className={classes.cardCategory}>
                     <span className={classes.successText}>
                       <ArrowUpward className={classes.upArrowCardCategory} /> 50%
                     </span>{" "}
                     increase in last 3 hours.
 
-                  </p>
+                  </p> */}
                 </CardBody>
                 <CardFooter chart>
                   <div className={classes.stats}>
